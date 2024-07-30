@@ -12,7 +12,7 @@ public class QuizApplication {
     }
 
     public void registerUser(String name) {
-        if (users.containsKey(name)) {
+        if (!users.containsKey(name)) {
             users.put(name, new User(name));
         }
         else {
