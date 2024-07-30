@@ -48,7 +48,10 @@ public class QuizApplication {
             int choice = sc.nextInt()-1;
             userAnswers.add(choice);
         }
+        currentUser.addQuizTaken();
         int score=quiz.calculateScore(userAnswers);
+        System.out.println("Your score: "+score+"/"+currentQuiz.size());
+        currentUser.saveScore(score);
     }
 
 }
