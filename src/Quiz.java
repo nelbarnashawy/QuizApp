@@ -8,7 +8,7 @@ public class Quiz {
     private static ArrayList<Question> allQuestions = new ArrayList<>();
     private Scanner sc;
 
-    public Quiz(int numQuestions) {
+    public Quiz() {
         quizQuestions = new ArrayList<>();
         sc = new Scanner(System.in);
     }
