@@ -19,6 +19,12 @@ public class Quiz {
             System.out.println("Incorrect number of answers");
             return -1;
         }
-
+        for(int i = 0; i < answers.size(); i++){
+            int correctAnswer =questions.get(i).getCorrectAnswer();
+            if(answers.get(i) == correctAnswer){
+                score++;
+            }
+        }
+        return score;
     }
 }
