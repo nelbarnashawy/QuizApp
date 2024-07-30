@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class QuizApplication {
@@ -25,6 +26,18 @@ public class QuizApplication {
     public void addQuestions(Question question){
         quiz.addQuestion(question);
     }
+    public void getUserScores(String name){
+        if(!users.containsKey(name)){
+            System.out.println("User not found!");
+            return;
+        }
+        User currentUser = users.get(name);
+        System.out.println("The scores for "+currentUser.getName()+"are: ");
+        for(Map.Entry<Integer, Integer> score: currentUser.getQuizzesScores().entrySet()){
+            System.out.println("Quiz Number: "+score.getKey()+": "+score.getValue());
+        }
+    }
+
     public void createQuiz(){
         quiz.createQuiz();
     }
@@ -52,6 +65,7 @@ public class QuizApplication {
         int score=quiz.calculateScore(userAnswers);
         System.out.println("Your score: "+score+"/"+currentQuiz.size());
         currentUser.saveScore(score);
+        currentUser.saveQuizSize(currentQuiz.size());
     }
 
 }
