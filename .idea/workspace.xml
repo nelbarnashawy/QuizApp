@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80bd519a-f989-4d14-9a7e-4e6b88332df8" name="Changes" comment="" />
+    <list default="true" id="80bd519a-f989-4d14-9a7e-4e6b88332df8" name="Changes" comment="Created new Project &amp; Question.java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +10,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/nelbarnashawy/QuizApp.git",
+    "accountId": "d606327e-de3e-4ac6-b70f-d2797a6ca980"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 7
@@ -23,8 +29,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -45,11 +56,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722313359380</updated>
-      <workItem from="1722313360493" duration="3000" />
+      <workItem from="1722313360493" duration="316000" />
     </task>
+    <task id="LOCAL-00001" summary="Created new Project &amp; Question.java">
+      <option name="closed" value="true" />
+      <created>1722313465034</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722313465034</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created new Project &amp; Question.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created new Project &amp; Question.java" />
   </component>
 </project>
