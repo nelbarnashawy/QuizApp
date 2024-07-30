@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80bd519a-f989-4d14-9a7e-4e6b88332df8" name="Changes" comment="Set up score calculator in Quiz.java">
-      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+    <list default="true" id="80bd519a-f989-4d14-9a7e-4e6b88332df8" name="Changes" comment="Finished randomQuiz(): the random quiz generator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quiz.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722313359380</updated>
-      <workItem from="1722313360493" duration="1160000" />
+      <workItem from="1722313360493" duration="2997000" />
     </task>
     <task id="LOCAL-00001" summary="Created new Project &amp; Question.java">
       <option name="closed" value="true" />
@@ -125,7 +125,87 @@
       <option name="project" value="LOCAL" />
       <updated>1722314463230</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Created User.java and established its attributes, constructor, and getters/setters.">
+      <option name="closed" value="true" />
+      <created>1722314566854</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722314566854</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Created User.java and established its attributes, constructor, and getters/setters.">
+      <option name="closed" value="true" />
+      <created>1722314582832</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722314582832</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Created QuizApplication.java">
+      <option name="closed" value="true" />
+      <created>1722314698454</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722314698454</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Established User Registration">
+      <option name="closed" value="true" />
+      <created>1722314829751</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722314829752</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added Quiz quiz to attribute and constructor">
+      <option name="closed" value="true" />
+      <created>1722314933178</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722314933178</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Created a new variable (quizQuestions) where the random quiz created can be placed.&#10;Changed &quot;questions&quot; to &quot;allQuestions&quot; and made it static. Meaning all possible questions that random quiz generator can choose from are saved across all instances of Quiz">
+      <option name="closed" value="true" />
+      <created>1722315625548</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1722315625548</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Create createQuiz method which takes in an input from the user specifying the number of questions he wants in his random quiz">
+      <option name="closed" value="true" />
+      <created>1722315953950</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1722315953950</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Moved Scanner creation to file attributes and constructor to eliminate having to redefine it in each method">
+      <option name="closed" value="true" />
+      <created>1722316074078</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1722316074078</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Created a random quiz generator">
+      <option name="closed" value="true" />
+      <created>1722316334523</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722316334523</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Finished randomQuiz(): the random quiz generator">
+      <option name="closed" value="true" />
+      <created>1722316364755</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1722316364755</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +218,15 @@
     <MESSAGE value="Created Quiz.java" />
     <MESSAGE value="Established Quiz.java attributes, constructor, and getters/setters" />
     <MESSAGE value="Set up score calculator in Quiz.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set up score calculator in Quiz.java" />
+    <MESSAGE value="Created User.java and established its attributes, constructor, and getters/setters." />
+    <MESSAGE value="Created QuizApplication.java" />
+    <MESSAGE value="Established User Registration" />
+    <MESSAGE value="Added Quiz quiz to attribute and constructor" />
+    <MESSAGE value="Created a new variable (quizQuestions) where the random quiz created can be placed.&#10;Changed &quot;questions&quot; to &quot;allQuestions&quot; and made it static. Meaning all possible questions that random quiz generator can choose from are saved across all instances of Quiz" />
+    <MESSAGE value="Create createQuiz method which takes in an input from the user specifying the number of questions he wants in his random quiz" />
+    <MESSAGE value="Moved Scanner creation to file attributes and constructor to eliminate having to redefine it in each method" />
+    <MESSAGE value="Created a random quiz generator" />
+    <MESSAGE value="Finished randomQuiz(): the random quiz generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished randomQuiz(): the random quiz generator" />
   </component>
 </project>
