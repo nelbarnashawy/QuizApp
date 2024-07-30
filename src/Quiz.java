@@ -28,7 +28,14 @@ public class Quiz {
     // Create a random quiz (with a specific size) out of all possible questions
     public void randomQuiz(int numQuestions) {
         Random rand = new Random();
-
+        int usedIndex = -1;
+        while(quizQuestions.size() < numQuestions) {
+            int index = rand.nextInt(quizQuestions.size());
+            if(index != usedIndex){
+                quizQuestions.add(allQuestions.get(index));
+                usedIndex = index;
+            }
+        }
     }
 
     public int calculateScore(ArrayList<Integer> answers){
