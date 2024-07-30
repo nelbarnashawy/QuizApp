@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80bd519a-f989-4d14-9a7e-4e6b88332df8" name="Changes" comment="">
+    <list default="true" id="80bd519a-f989-4d14-9a7e-4e6b88332df8" name="Changes" comment="Removed the calling for &quot;createQuiz&quot; in main since when I call &quot;takeQuiz&quot;, I'm already calling the createQuiz.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/QuizApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuizApplication.java" afterDir="false" />
     </list>
@@ -52,6 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.QuizApplication.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
@@ -80,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722313359380</updated>
-      <workItem from="1722313360493" duration="6209000" />
+      <workItem from="1722313360493" duration="7701000" />
     </task>
     <task id="LOCAL-00001" summary="Created new Project &amp; Question.java">
       <option name="closed" value="true" />
@@ -346,19 +347,61 @@
       <option name="project" value="LOCAL" />
       <updated>1722319414554</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Added the ability to showcase Score/Total Questions in getUserScores method.&#10;&#10;Added Main">
+      <option name="closed" value="true" />
+      <created>1722319775627</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1722319775627</updated>
+    </task>
+    <task id="LOCAL-00035" summary="workspace.xml changes">
+      <option name="closed" value="true" />
+      <created>1722319796081</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1722319796081</updated>
+    </task>
+    <task id="LOCAL-00036" summary="First Test Run with Mockup data">
+      <option name="closed" value="true" />
+      <created>1722320683561</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1722320683561</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Fixed issue in Quiz.java where the random number picked for quiz was selecting by quizQuestion size, not by allQuestions size">
+      <option name="closed" value="true" />
+      <created>1722320968154</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1722320968154</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Fixed bug in registering users where the if condition needed a not (!)">
+      <option name="closed" value="true" />
+      <created>1722320995771</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1722320995771</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Removed the calling for &quot;createQuiz&quot; in main since when I call &quot;takeQuiz&quot;, I'm already calling the createQuiz.">
+      <option name="closed" value="true" />
+      <created>1722321151064</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1722321151064</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created User.java and established its attributes, constructor, and getters/setters." />
-    <MESSAGE value="Created QuizApplication.java" />
-    <MESSAGE value="Established User Registration" />
-    <MESSAGE value="Added Quiz quiz to attribute and constructor" />
-    <MESSAGE value="Created a new variable (quizQuestions) where the random quiz created can be placed.&#10;Changed &quot;questions&quot; to &quot;allQuestions&quot; and made it static. Meaning all possible questions that random quiz generator can choose from are saved across all instances of Quiz" />
-    <MESSAGE value="Create createQuiz method which takes in an input from the user specifying the number of questions he wants in his random quiz" />
     <MESSAGE value="Moved Scanner creation to file attributes and constructor to eliminate having to redefine it in each method" />
     <MESSAGE value="Created a random quiz generator" />
     <MESSAGE value="Finished randomQuiz(): the random quiz generator" />
@@ -378,6 +421,12 @@
     <MESSAGE value="Added quizzesSizes Hash Map to save each quiz taken's size" />
     <MESSAGE value="Added saveQuizzesSizes in the takeQuiz method, as well as established getUserScores method" />
     <MESSAGE value="Added saveQuizSize in the takeQuiz method, as well as established getUserScores method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added saveQuizSize in the takeQuiz method, as well as established getUserScores method" />
+    <MESSAGE value="Added the ability to showcase Score/Total Questions in getUserScores method.&#10;&#10;Added Main" />
+    <MESSAGE value="workspace.xml changes" />
+    <MESSAGE value="First Test Run with Mockup data" />
+    <MESSAGE value="Fixed issue in Quiz.java where the random number picked for quiz was selecting by quizQuestion size, not by allQuestions size" />
+    <MESSAGE value="Fixed bug in registering users where the if condition needed a not (!)" />
+    <MESSAGE value="Removed the calling for &quot;createQuiz&quot; in main since when I call &quot;takeQuiz&quot;, I'm already calling the createQuiz." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed the calling for &quot;createQuiz&quot; in main since when I call &quot;takeQuiz&quot;, I'm already calling the createQuiz." />
   </component>
 </project>
