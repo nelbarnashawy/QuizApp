@@ -1,18 +1,25 @@
 import java.util.ArrayList;
 
 public class Quiz {
-    private ArrayList<Question> questions;
+    private ArrayList<Question> quizQuestions;
+    private static ArrayList<Question> allQuestions = new ArrayList<>();
 
-    public Quiz() {
-        questions = new ArrayList<>();
+    public Quiz(int numQuestions) {
+        quizQuestions = new ArrayList<>();
+        randomQuiz();
     }
 
     public void addQuestion(Question question) {
-        questions.add(question);
+        allQuestions.add(question);
     }
-    public ArrayList<Question> displayQuestions() {
-        return questions;
+    public ArrayList<Question> displayAllQuestions() {
+        return allQuestions;
     }
+    // Create a random quiz (with a specific size) out of all possible questions
+    public void randomQuiz(int numQuestions) {
+
+    }
+
     public int calculateScore(ArrayList<Integer> answers){
         int score = 0;
         if(answers.size() != questions.size()){
