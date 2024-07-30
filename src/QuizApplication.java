@@ -13,7 +13,12 @@ public class QuizApplication {
     }
 
     public void registerUser(String name) {
-        users.add(new User(name));
+        if (users.contains(name)) {
+            users.add(new User(name));
+        }
+        else {
+            System.out.println("User already exists!");
+        }
     }
 
     public void addQuestions(Question question){
@@ -25,6 +30,7 @@ public class QuizApplication {
 
     public void takeQuiz(){
         System.out.println("Please enter your name: ");
+        String name = sc.next();
 
     }
 
