@@ -1,4 +1,7 @@
+import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Quiz {
     private ArrayList<Question> quizQuestions;
@@ -6,7 +9,6 @@ public class Quiz {
 
     public Quiz(int numQuestions) {
         quizQuestions = new ArrayList<>();
-        randomQuiz();
     }
 
     public void addQuestion(Question question) {
@@ -15,9 +17,17 @@ public class Quiz {
     public ArrayList<Question> displayAllQuestions() {
         return allQuestions;
     }
+
+    public void createQuiz() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter the number of questions you want in your quiz: ");
+        int numQuestions = sc.nextInt();
+        randomQuiz(numQuestions);
+    }
     // Create a random quiz (with a specific size) out of all possible questions
     public void randomQuiz(int numQuestions) {
-
+        Random rand = new Random();
+        Scanner sc = new Scanner(System.in);
     }
 
     public int calculateScore(ArrayList<Integer> answers){
