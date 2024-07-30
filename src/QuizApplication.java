@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class QuizApplication {
     private HashMap<String, User> users;
@@ -73,7 +70,16 @@ public class QuizApplication {
         QuizApplication app = new QuizApplication();
 
         app.registerUser("Nader Atef");
-        app.addQuestions(new Question("What type of solutions does Sumerge primarily provide?", ));
+
+        app.addQuestions(new Question("What type of solutions does Sumerge primarily provide?", new ArrayList<String>(Arrays.asList("Financial Solutions", "IT and Business Solutions", "Agriculture Solutions", "Manufacturing Solutions")), 1));
+        app.addQuestions(new Question("Which sector does Sumerge NOT serve?", new ArrayList<String>(Arrays.asList("Banking", "Government", "Telecom", "Education")), 3));
+        app.addQuestions(new Question("What's 2+2?", new ArrayList<String>(Arrays.asList("4", "1", "5", "3")), 0));
+        app.addQuestions(new Question("What's the capital of Egypt?", new ArrayList<String>(Arrays.asList("Alexandria", "El Gouna", "Cairo", "Luxor")), 2));
+        app.addQuestions(new Question("What's language is primarily spoken at Egypt?", new ArrayList<String>(Arrays.asList("English", "Japenese", "French", "Arabic")), 3));
+
+        app.createQuiz();
+        app.takeQuiz("Nader Atef");
+
     }
 
 }
