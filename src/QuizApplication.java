@@ -77,7 +77,7 @@ public class QuizApplication {
         app.addQuestions(new Question("What's the capital of Egypt?", new ArrayList<String>(Arrays.asList("Alexandria", "El Gouna", "Cairo", "Luxor")), 2));
         app.addQuestions(new Question("What's language is primarily spoken at Egypt?", new ArrayList<String>(Arrays.asList("English", "Japenese", "French", "Arabic")), 3));
 
-        app.createQuiz();
+        app.takeQuiz();
         app.takeQuiz("Nader Atef");
 
     }
