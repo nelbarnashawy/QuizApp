@@ -29,10 +29,26 @@ public class QuizApplication {
         quiz.createQuiz();
     }
 
-    public void takeQuiz(){
-        System.out.println("Please enter your name: ");
-        String name = sc.next();
-
+    public void takeQuiz(String name){
+        if(!users.containsKey(name)){
+            System.out.println("User not registered! Please register first");
+            return;
+        }
+        User currentUser=users.get(name);
+        createQuiz();
+        ArrayList<Question> currentQuiz=quiz.getQuizQuestions();
+        ArrayList<Integer> userAnswers = new ArrayList<>();
+        for(Question question:currentQuiz){
+            System.out.println(question.getQuestionText());
+            ArrayList<String> possibleAnswers = question.getPossibleAnswers();
+            for(int i = 0; i<possibleAnswers.size(); i++){
+                System.out.println((i+1) + "- " + possibleAnswers.get(i));
+            }
+            System.out.println("Please choose the number of your choice: ");
+            int choice = sc.nextInt()-1;
+            userAnswers.add(choice);
+        }
+        int score=quiz.calculateScore(userAnswers);
     }
 
 }
