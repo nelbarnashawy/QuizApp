@@ -40,12 +40,12 @@ public class Quiz {
 
     public int calculateScore(ArrayList<Integer> answers){
         int score = 0;
-        if(answers.size() != questions.size()){
+        if(answers.size() != quizQuestions.size()){
             System.out.println("Incorrect number of answers");
             return -1;
         }
         for(int i = 0; i < answers.size(); i++){
-            int correctAnswer =questions.get(i).getCorrectAnswer();
+            int correctAnswer =quizQuestions.get(i).getCorrectAnswer();
             if(answers.get(i) == correctAnswer){
                 score++;
             }
