@@ -34,7 +34,8 @@ public class QuizApplication {
         User currentUser = users.get(name);
         System.out.println("The scores for "+currentUser.getName()+"are: ");
         for(Map.Entry<Integer, Integer> score: currentUser.getQuizzesScores().entrySet()){
-            System.out.println("Quiz Number: "+score.getKey()+": "+score.getValue());
+            int key = score.getKey();
+            System.out.println("Quiz Number: "+score.getKey()+": "+score.getValue()+"/"+currentUser.getQuizzesSizes().get(key));
         }
     }
 
@@ -66,6 +67,13 @@ public class QuizApplication {
         System.out.println("Your score: "+score+"/"+currentQuiz.size());
         currentUser.saveScore(score);
         currentUser.saveQuizSize(currentQuiz.size());
+    }
+
+    public static void main(String[] args) {
+        QuizApplication app = new QuizApplication();
+
+        app.registerUser("Nader Atef");
+        app.addQuestions(new Question("What type of solutions does Sumerge primarily provide?", ));
     }
 
 }
