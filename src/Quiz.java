@@ -6,9 +6,11 @@ import java.util.Scanner;
 public class Quiz {
     private ArrayList<Question> quizQuestions;
     private static ArrayList<Question> allQuestions = new ArrayList<>();
+    private Scanner sc;
 
     public Quiz(int numQuestions) {
         quizQuestions = new ArrayList<>();
+        sc = new Scanner(System.in);
     }
 
     public void addQuestion(Question question) {
@@ -19,7 +21,6 @@ public class Quiz {
     }
 
     public void createQuiz() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Please enter the number of questions you want in your quiz: ");
         int numQuestions = sc.nextInt();
         randomQuiz(numQuestions);
@@ -27,7 +28,7 @@ public class Quiz {
     // Create a random quiz (with a specific size) out of all possible questions
     public void randomQuiz(int numQuestions) {
         Random rand = new Random();
-        Scanner sc = new Scanner(System.in);
+
     }
 
     public int calculateScore(ArrayList<Integer> answers){
