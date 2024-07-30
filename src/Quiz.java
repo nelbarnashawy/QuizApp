@@ -34,7 +34,7 @@ public class Quiz {
         Random rand = new Random();
         int usedIndex = -1;
         while(quizQuestions.size() < numQuestions) {
-            int index = rand.nextInt(quizQuestions.size());
+            int index = rand.nextInt(allQuestions.size());
             if(index != usedIndex){
                 quizQuestions.add(allQuestions.get(index));
                 usedIndex = index;
