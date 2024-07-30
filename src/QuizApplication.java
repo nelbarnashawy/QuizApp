@@ -12,5 +12,8 @@ public class QuizApplication {
         users.add(new User(name));
     }
 
+    public void addQuestions(Question question){
+        quiz.addQuestion(question);
+    }
 
 }
