@@ -29,7 +29,7 @@ public class QuizApplication {
             return;
         }
         User currentUser = users.get(name);
-        System.out.println("The scores for "+currentUser.getName()+"are: ");
+        System.out.println("The scores for "+currentUser.getName()+" are: ");
         for(Map.Entry<Integer, Integer> score: currentUser.getQuizzesScores().entrySet()){
             int key = score.getKey();
             System.out.println("Quiz Number: "+score.getKey()+": "+score.getValue()+"/"+currentUser.getQuizzesSizes().get(key));
@@ -70,6 +70,7 @@ public class QuizApplication {
         QuizApplication app = new QuizApplication();
 
         app.registerUser("Nader Atef");
+        app.registerUser("Youssef Eid");
 
         app.addQuestions(new Question("What type of solutions does Sumerge primarily provide?", new ArrayList<String>(Arrays.asList("Financial Solutions", "IT and Business Solutions", "Agriculture Solutions", "Manufacturing Solutions")), 1));
         app.addQuestions(new Question("Which sector does Sumerge NOT serve?", new ArrayList<String>(Arrays.asList("Banking", "Government", "Telecom", "Education")), 3));
@@ -78,6 +79,9 @@ public class QuizApplication {
         app.addQuestions(new Question("What's language is primarily spoken at Egypt?", new ArrayList<String>(Arrays.asList("English", "Japenese", "French", "Arabic")), 3));
 
         app.takeQuiz("Nader Atef");
+        app.takeQuiz("Youssef Eid");
+
+        app.getUserScores("Nader Atef");
 
     }
 
