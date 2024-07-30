@@ -1,20 +1,21 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class QuizApplication {
-    private ArrayList<User> users;
+    private HashMap<String, User> users;
     private Quiz quiz;
     private Scanner sc;
 
     public QuizApplication() {
-        users = new ArrayList<>();
+        users = new HashMap<String, User>();
         quiz = new Quiz();
         sc = new Scanner(System.in);
     }
 
     public void registerUser(String name) {
-        if (users.contains(name)) {
-            users.add(new User(name));
+        if (users.containsKey(name)) {
+            users.put(name, new User(name));
         }
         else {
             System.out.println("User already exists!");
