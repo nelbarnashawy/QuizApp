@@ -15,6 +15,9 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
+    public HashMap<Integer, Integer> getQuizzesScores() {
+        return quizzesScores;
+    }
 
     public void addQuizTaken(){
         quizzesTaken++;
