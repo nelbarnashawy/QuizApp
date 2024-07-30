@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80bd519a-f989-4d14-9a7e-4e6b88332df8" name="Changes" comment="Finished randomQuiz(): the random quiz generator">
+    <list default="true" id="80bd519a-f989-4d14-9a7e-4e6b88332df8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuizApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuizApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Nader ElBarnashawy &lt;nelbarnashawy@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
@@ -75,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722313359380</updated>
-      <workItem from="1722313360493" duration="2997000" />
+      <workItem from="1722313360493" duration="6209000" />
     </task>
     <task id="LOCAL-00001" summary="Created new Project &amp; Question.java">
       <option name="closed" value="true" />
@@ -205,19 +210,149 @@
       <option name="project" value="LOCAL" />
       <updated>1722316364755</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Edited &quot;questions&quot; to &quot;quizQuestions&quot; in calculateScore">
+      <option name="closed" value="true" />
+      <created>1722316409943</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1722316409943</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Edited &quot;questions&quot; to &quot;quizQuestions&quot; in calculateScore">
+      <option name="closed" value="true" />
+      <created>1722316499361</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1722316499361</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Pushing workspace.xml">
+      <option name="closed" value="true" />
+      <created>1722316525407</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1722316525407</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added addQuestions method in QuizApplication">
+      <option name="closed" value="true" />
+      <created>1722316630238</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1722316630238</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Removed input from constructor">
+      <option name="closed" value="true" />
+      <created>1722316685904</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1722316685904</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Established instance of quiz in constructor and created createQuiz() method">
+      <option name="closed" value="true" />
+      <created>1722316723374</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1722316723374</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Created a scanner attribute to be used in methods.&#10;Created takeQuiz() method">
+      <option name="closed" value="true" />
+      <created>1722316869159</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1722316869159</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Edited registerUser, where it checks if user already exists or not">
+      <option name="closed" value="true" />
+      <created>1722316999035</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1722316999035</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Changed users' data type to HashMap&lt;String, User&gt; in order to map each User object in the List to a String for easier access.&#10;&#10;Edited registerUser method to fit changes">
+      <option name="closed" value="true" />
+      <created>1722317161603</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1722317161603</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added getQuizQuestions in Quiz">
+      <option name="closed" value="true" />
+      <created>1722317447832</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1722317447832</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Created in takeQuiz(), the ability to start a new quiz, take it, and save the user's answers, then use it to calculate user score.">
+      <option name="closed" value="true" />
+      <created>1722318458134</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1722318458134</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Added two new attributes:&#10;quizzesTaken - An attribute used to track how many quizzes the user took in his lifetime.&#10;quizzesScores - A Hash Map used to map the user's scores of the different &quot;quizzes Taken&quot;">
+      <option name="closed" value="true" />
+      <created>1722318734536</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1722318734536</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Added the ability to save the user's score, and also the quiz prints out the user their score in the end.">
+      <option name="closed" value="true" />
+      <created>1722318835897</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1722318835897</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Added a getQuizzesScores() getter">
+      <option name="closed" value="true" />
+      <created>1722319125681</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1722319125681</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added quizzesSizes Hash Map to save each quiz taken's size">
+      <option name="closed" value="true" />
+      <created>1722319351701</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1722319351701</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Added saveQuizzesSizes in the takeQuiz method, as well as established getUserScores method">
+      <option name="closed" value="true" />
+      <created>1722319385037</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1722319385037</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added saveQuizSize in the takeQuiz method, as well as established getUserScores method">
+      <option name="closed" value="true" />
+      <created>1722319414554</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1722319414554</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created new Project &amp; Question.java" />
-    <MESSAGE value="Pushed workspace.xml" />
-    <MESSAGE value="Established Question.java with its attributes, constructor, and getters/setters." />
-    <MESSAGE value="Created Quiz.java" />
-    <MESSAGE value="Established Quiz.java attributes, constructor, and getters/setters" />
-    <MESSAGE value="Set up score calculator in Quiz.java" />
     <MESSAGE value="Created User.java and established its attributes, constructor, and getters/setters." />
     <MESSAGE value="Created QuizApplication.java" />
     <MESSAGE value="Established User Registration" />
@@ -227,6 +362,22 @@
     <MESSAGE value="Moved Scanner creation to file attributes and constructor to eliminate having to redefine it in each method" />
     <MESSAGE value="Created a random quiz generator" />
     <MESSAGE value="Finished randomQuiz(): the random quiz generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished randomQuiz(): the random quiz generator" />
+    <MESSAGE value="Edited &quot;questions&quot; to &quot;quizQuestions&quot; in calculateScore" />
+    <MESSAGE value="Pushing workspace.xml" />
+    <MESSAGE value="Added addQuestions method in QuizApplication" />
+    <MESSAGE value="Removed input from constructor" />
+    <MESSAGE value="Established instance of quiz in constructor and created createQuiz() method" />
+    <MESSAGE value="Created a scanner attribute to be used in methods.&#10;Created takeQuiz() method" />
+    <MESSAGE value="Edited registerUser, where it checks if user already exists or not" />
+    <MESSAGE value="Changed users' data type to HashMap&lt;String, User&gt; in order to map each User object in the List to a String for easier access.&#10;&#10;Edited registerUser method to fit changes" />
+    <MESSAGE value="Added getQuizQuestions in Quiz" />
+    <MESSAGE value="Created in takeQuiz(), the ability to start a new quiz, take it, and save the user's answers, then use it to calculate user score." />
+    <MESSAGE value="Added two new attributes:&#10;quizzesTaken - An attribute used to track how many quizzes the user took in his lifetime.&#10;quizzesScores - A Hash Map used to map the user's scores of the different &quot;quizzes Taken&quot;" />
+    <MESSAGE value="Added the ability to save the user's score, and also the quiz prints out the user their score in the end." />
+    <MESSAGE value="Added a getQuizzesScores() getter" />
+    <MESSAGE value="Added quizzesSizes Hash Map to save each quiz taken's size" />
+    <MESSAGE value="Added saveQuizzesSizes in the takeQuiz method, as well as established getUserScores method" />
+    <MESSAGE value="Added saveQuizSize in the takeQuiz method, as well as established getUserScores method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added saveQuizSize in the takeQuiz method, as well as established getUserScores method" />
   </component>
 </project>
