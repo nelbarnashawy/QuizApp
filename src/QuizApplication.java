@@ -6,6 +6,7 @@ public class QuizApplication {
 
     public QuizApplication() {
         users = new ArrayList<>();
+        quiz = new Quiz();
     }
 
     public void registerUser(String name) {
@@ -14,6 +15,9 @@ public class QuizApplication {
 
     public void addQuestions(Question question){
         quiz.addQuestion(question);
+    }
+    public void createQuiz(){
+        quiz.createQuiz();
     }
 
 }
