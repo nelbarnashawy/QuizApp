@@ -20,6 +20,10 @@ public class Quiz {
         return allQuestions;
     }
 
+    public ArrayList<Question> getQuizQuestions() {
+        return quizQuestions;
+    }
+
     public void createQuiz() {
         System.out.println("Please enter the number of questions you want in your quiz: ");
         int numQuestions = sc.nextInt();
